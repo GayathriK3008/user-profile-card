@@ -1,50 +1,98 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
 }
 
+/* Card container styles */
 .card {
-    background-color: white;
-    padding: 20px;
-    margin: 20px;
+    background-color: #ffffff;
+    width: 350px; /* Increased width */
+    padding: 30px; /* Increased padding */
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 300px;
+    color: #333333;
 }
 
+/* Profile picture styles */
 .profile-pic {
+    width: 120px; /* Increased size */
+    height: 120px; /* Increased size */
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    margin-bottom: 20px;
 }
 
+/* Title styles */
 .title {
-    color: grey;
-    font-size: 18px;
+    font-size: 22px; /* Increased font size */
+    color: #007bff; /* Blue */
+    margin-bottom: 10px;
+}
+
+/* Project description styles */
+.project-description {
+    font-style: italic;
+    color: #555555;
+    font-size: 16px; /* Increased font size */
+    margin-bottom: 20px; /* Increased margin */
+}
+
+/* Social media icons styles */
+.social-media {
+    margin-bottom: 30px; /* Increased margin */
 }
 
 .social-media a img {
-    width: 20px;
-    margin: 0 5px;
+    width: 30px; /* Adjusted size */
+    height: 30px; /* Adjusted size */
+    margin: 0 10px; /* Increased margin */
+    border-radius: 50%;
+    background-color: #007bff; /* Blue */
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
 }
 
-button {
+.social-media a img:hover {
+    transform: scale(1.2);
+}
+
+/* College link styles */
+.card a {
+    color: #007bff; /* Blue */
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px; /* Increased margin */
+    font-size: 18px; /* Increased font size */
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Contact button styles */
+#contact-button {
+    background-color: #007bff; /* Blue */
+    color: #ffffff;
     border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
+    padding: 12px 24px; /* Increased padding */
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Increased font size */
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #555;
+#contact-button:hover {
+    background-color: #0056b3; /* Darker blue */
 }
